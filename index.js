@@ -10,6 +10,6 @@ var server = net.createServer(function(socket) {
   socket.pipe(socket);
 });
 
-server.listen(80, function() {
-  console.log('server listening on port 80');
+server.listen(40404, function() {
+  console.log('server listening on port 40404');
 });

@@ -1,13 +1,16 @@
 {
   "name": "echojs",
-  "version": "1.0.0-1",
+  "version": "1.0.0-2",
   "description": "echo some stuff",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/naomik/echojs.git"
+  },
   "author": "Naomi Kyoto",
   "license": "BSD",
   "subdomain": "echojs",
