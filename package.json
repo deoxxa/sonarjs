@@ -1,6 +1,6 @@
 {
   "name": "echojs",
-  "version": "1.0.0",
+  "version": "1.0.0-1",
   "description": "echo some stuff",
   "main": "index.js",
   "scripts": {
@@ -9,5 +9,9 @@
   },
   "repository": "",
   "author": "Naomi Kyoto",
-  "license": "BSD"
+  "license": "BSD",
+  "subdomain": "echojs",
+  "engines": {
+    "node": "0.8.x"
+  }
 }

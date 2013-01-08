@@ -1,21 +1,15 @@
-var Stream = require('stream').Stream;
-var util = require('util');
+var net = require('net');
 
-var Echo = function() {
-  Stream.call(this);
+var server = net.createServer(function(socket) {
+  socket.on('end', function() {
+    console.log('server disconnected');
+  });
   
-  this.readable = true;
-  this.writable = true;
+  socket.write('begin typing happily...\r\n');
+  
+  socket.pipe(socket);
+});
 
-  this.write = function(buffer) {
-    console.log('echo: ' + buffer.toString().trim());
-  };
-};
-
-util.inherits(Echo, Stream);
-
-var echo = new Echo();
-
-process.stdin.resume();
-process.stdin.pipe(echo);
-console.log("type happily...\n");
+server.listen(5000, function() {
+  console.log('server listening on port 5000');
+});
