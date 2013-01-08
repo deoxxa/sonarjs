@@ -2,14 +2,14 @@ var net = require('net');
 
 var server = net.createServer(function(socket) {
   socket.on('end', function() {
-    console.log('server disconnected');
+    console.log('sonarjs disconnected');
   });
   
-  socket.write('begin typing happily...\r\n');
+  socket.write('beep boop...\r\n');
   
   socket.pipe(socket);
 });
 
 server.listen(40404, function() {
-  console.log('server listening on port 40404');
+  console.log('sonarjs listening on port 40404');
 });

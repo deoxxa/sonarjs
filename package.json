@@ -1,5 +1,5 @@
 {
-  "name": "echojs",
+  "name": "sonarjs",
   "version": "1.0.0-2",
   "description": "echo some stuff",
   "main": "index.js",
@@ -9,11 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/naomik/echojs.git"
+    "url": "git://github.com/naomik/sonarjs.git"
   },
   "author": "Naomi Kyoto",
   "license": "BSD",
-  "subdomain": "echojs",
   "engines": {
     "node": "0.8.x"
   }
