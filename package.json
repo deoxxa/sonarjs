@@ -1,6 +1,6 @@
 {
   "name": "sonarjs",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "echo some stuff",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git://github.com/naomik/sonarjs.git"
   },
-  "author": "Naomi Kyoto",
+  "author": "Naomi Kyoto <nakyoto@gmail.com>",
   "license": "BSD",
   "engines": {
     "node": "0.8.x"
