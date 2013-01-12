@@ -1,1 +1,1 @@
-sonarjs: index.js
+sonarjs: ./bin/sonar.js

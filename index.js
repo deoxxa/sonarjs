@@ -3,7 +3,7 @@ var net = require('net');
 var clients = [];
 
 var server = net.createServer(function(socket) {
-  
+
   // open new socket
   socket.write('beep boop...\r\n');
   clients.push(socket);
@@ -21,7 +21,7 @@ var server = net.createServer(function(socket) {
       client.write(chunk);
     });
   });
-  
+
   // connect stdin
   process.stdin.resume();
   process.stdin.on('data', function(data) {

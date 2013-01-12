@@ -1,1 +1,6 @@
 *.log
+/node_modules
+/server.crt
+/server.key
+/server.csr
+/server.pfx
