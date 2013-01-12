@@ -11,9 +11,18 @@
     "type": "git",
     "url": "git://github.com/naomik/sonarjs.git"
   },
+  "bin": {
+    "sonar": "./bin/sonar.js"
+  },
   "author": "Naomi Kyoto <nakyoto@gmail.com>",
   "license": "BSD",
   "engines": {
     "node": "0.8.x"
+  },
+  "dependencies": {
+    "jspit": "0.0.1",
+    "steez": "~0.4.2",
+    "jsuck": "0.0.1",
+    "winston": "~0.6.2"
   }
 }
