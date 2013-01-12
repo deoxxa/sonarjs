@@ -5,18 +5,18 @@ var fs = require("fs"),
     tls = require("tls"),
     winston = require("winston");
 
-var Pod = require("../lib/pod");
+var Superpod = require("../lib/superpod");
 
-var pod = new Pod();
+var superpod = new Superpod();
 
-pod.on("log", winston.log.bind(winston));
+superpod.on("log", winston.log.bind(winston));
 
 var options = {
   pfx: fs.readFileSync(path.join(__dirname, "..", "server.pfx")),
   requestCert: true,
 };
 
-var server = tls.createServer(options, pod.onConnection.bind(pod));
+var server = tls.createServer(options, superpod.onConnection.bind(superpod));
 
 server.listen(40404, function() {
   winston.info("server listening", {address: this.address().address, port: this.address().port});
