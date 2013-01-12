@@ -9,6 +9,8 @@ var Pod = require("../lib/pod");
 
 var pod = new Pod();
 
+pod.on("log", winston.log.bind(winston));
+
 var options = {
   pfx: fs.readFileSync(path.join(__dirname, "..", "server.pfx")),
   requestCert: true,
